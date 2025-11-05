@@ -41,6 +41,15 @@ if hasattr(config, 'SQLALCHEMY_ENGINE_OPTIONS'):
 from backend.models import db
 db.init_app(app)
 
+# Ensure database sessions are properly cleaned up after each request
+@app.teardown_appcontext
+def close_db(error):
+    """Close database connection after each request"""
+    try:
+        db.session.remove()
+    except:
+        pass
+
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'auth.login'
@@ -195,17 +204,20 @@ def handle_video_frame(data):
 def load_user(user_id):
     """Load user for Flask-Login with proper session management"""
     try:
-        user = User.query.get(int(user_id))
-        # Flask-Login will handle the session, but we ensure it's properly scoped
+        # Use get() which is safer than query.get() in threading mode
+        user = User.query.filter_by(id=int(user_id)).first()
+        # Don't close session here - Flask-Login manages it
+        # But ensure we handle errors properly
         return user
     except (ValueError, TypeError):
         return None
     except Exception as e:
         logger = logging.getLogger(__name__)
         logger.error(f"Error loading user {user_id}: {e}")
-        # Ensure session is cleaned up on error
+        # Clean up session on error to prevent connection leaks
         try:
             db.session.rollback()
+            db.session.close()
         except:
             pass
         return None

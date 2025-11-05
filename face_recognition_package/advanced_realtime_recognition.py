@@ -482,16 +482,30 @@ class FaceRecognitionSystem:
             except (cv2.error, ValueError) as e:
                 # Handle OpenCV errors (invalid vector subscript, assertion failures, etc.)
                 error_msg = str(e)
-                if "invalid vector subscript" in error_msg or "Assertion failed" in error_msg or "scaleIdx" in error_msg:
+                # Check for OpenCV-specific errors that we can safely ignore
+                opencv_errors = [
+                    "invalid vector subscript",
+                    "Assertion failed",
+                    "scaleIdx",
+                    "cascadedetect",
+                    "FeatureEvaluator",
+                    "getScaleData"
+                ]
+                is_opencv_error = any(err in error_msg for err in opencv_errors)
+                
+                if is_opencv_error:
                     # OpenCV face detection error - usually happens with problematic frames
-                    # Log but don't crash - just skip this frame
-                    logger.debug(f"OpenCV detection error (skipping frame): {error_msg}")
+                    # (small faces, poor quality, edge cases in eye detection)
+                    # Log at debug level but don't crash - just skip this frame
+                    logger.debug(f"OpenCV detection error (skipping frame): {error_msg[:100]}")
                     return None
-                # Re-raise ValueError for database-related errors
+                
+                # Re-raise ValueError for database-related errors (they need to be handled above)
                 if isinstance(e, ValueError):
                     raise
+                
                 # For other cv2.errors, just skip this frame
-                logger.debug(f"OpenCV error (skipping frame): {error_msg}")
+                logger.debug(f"OpenCV error (skipping frame): {error_msg[:100]}")
                 return None
             except ValueError as e:
                 # If pkl file is missing or empty, handle gracefully
@@ -693,12 +707,25 @@ class FaceRecognitionSystem:
         except (cv2.error, Exception) as e:
             # Handle OpenCV errors gracefully
             error_msg = str(e)
-            if "invalid vector subscript" in error_msg or "Assertion failed" in error_msg or "scaleIdx" in error_msg:
-                # OpenCV face detection error - skip this frame
-                logger.debug(f"OpenCV detection error (skipping frame): {error_msg}")
+            # Check for OpenCV-specific errors that we can safely ignore
+            opencv_errors = [
+                "invalid vector subscript",
+                "Assertion failed",
+                "scaleIdx",
+                "cascadedetect",
+                "FeatureEvaluator",
+                "getScaleData"
+            ]
+            is_opencv_error = any(err in error_msg for err in opencv_errors)
+            
+            if is_opencv_error:
+                # OpenCV face detection error - skip this frame (happens with problematic frames)
+                # Log at debug level to reduce noise
+                logger.debug(f"OpenCV detection error (skipping frame): {error_msg[:100]}")
                 return None
-            # Log other errors but don't crash
-            logger.error(f"Error processing frame: {e}", exc_info=True)
+            
+            # Log other unexpected errors (but limit stack trace to avoid spam)
+            logger.error(f"Error processing frame: {error_msg[:200]}", exc_info=False)
             return None
     
     def _recognition_worker(self):
