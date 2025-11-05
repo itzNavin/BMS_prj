@@ -3,10 +3,13 @@ Student Service
 Business logic for student management
 """
 
+import logging
 from backend.models import db, Student
 from utils import save_student_photos, copy_photos_to_face_db
 import os
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
 class StudentService:
@@ -75,14 +78,14 @@ class StudentService:
             
             if not face_db_paths:
                 # Warning but don't fail - photos are saved in uploads
-                print(f"Warning: Failed to copy photos to face recognition DB for {student.name}")
+                logger.warning(f"Failed to copy photos to face recognition DB for {student.name}")
             
             # Trigger face recognition database refresh
             try:
                 self.face_recognition_service.add_student_photos(saved_paths, student.name)
                 self.face_recognition_service.trigger_database_refresh()
             except Exception as e:
-                print(f"Warning: Face recognition refresh failed: {e}")
+                logger.warning(f"Face recognition refresh failed: {e}")
                 # Don't fail the operation - can refresh manually later
             
             # Commit transaction

@@ -1,6 +1,7 @@
 """
-Comprehensive verification script for Bus Management System
+Verification script for Bus Management System
 Checks all connections, imports, and file structure
+Run this after installation to verify everything is set up correctly.
 """
 
 import sys
@@ -12,8 +13,9 @@ project_root = Path(__file__).parent.absolute()
 sys.path.insert(0, str(project_root))
 
 print("="*70)
-print("BUS MANAGEMENT SYSTEM - COMPREHENSIVE VERIFICATION")
-print("="*70 + "\n")
+print("BUS MANAGEMENT SYSTEM - SETUP VERIFICATION")
+print("="*70)
+print("This script verifies your installation is complete and ready to run.\n")
 
 errors = []
 warnings = []

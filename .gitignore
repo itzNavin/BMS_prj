@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+database/*.pkl
+
+# Logs
+*.log
+logs/
+
+# Uploads (keep structure, ignore content)
+uploads/students/*/
+!uploads/students/.gitkeep
+
+# Face Recognition Database (keep structure, ignore content)
+face_recognition_package/database/*/
+face_recognition_package/database/*.pkl
+!face_recognition_package/database/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Documentation build
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Package files
+*.pkl
+*.pickle
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+

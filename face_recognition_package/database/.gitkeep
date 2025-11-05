@@ -1,0 +1,4 @@
+# This file ensures the directory is tracked in git
+# Student face images for recognition are stored here
+# Organized by student name folders: database/[student_name]/photo1.jpg
+

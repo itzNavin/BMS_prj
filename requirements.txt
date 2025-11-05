@@ -1,4 +1,5 @@
 # Bus Management System - Python Dependencies
+# Install with: pip install -r requirements.txt
 
 # Flask Web Framework
 Flask==3.0.0
@@ -13,16 +14,14 @@ SQLAlchemy>=2.0.44,<3.0.0
 # Authentication & Security
 bcrypt==4.1.2
 
-# Image Processing (for face recognition - already in face_recognition_package/requirements.txt)
-# OpenCV, DeepFace, TensorFlow are handled by face_recognition_package
-
 # Utilities
 python-dotenv==1.0.0
+python-dateutil==2.8.2
 
 # WebSocket Support
 python-socketio==5.10.0
 eventlet==0.33.3
 
-# Development
-python-dateutil==2.8.2
-
+# Note: Face recognition dependencies (DeepFace, OpenCV, TensorFlow) 
+# are installed separately from face_recognition_package/requirements.txt
+# Run: cd face_recognition_package && pip install -r requirements.txt

@@ -10,6 +10,9 @@ import sys
 import logging
 from pathlib import Path
 
+# Configure logging
+logger = logging.getLogger(__name__)
+
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -71,15 +74,12 @@ app.register_blueprint(auth_routes.bp, url_prefix='/auth')
 app.register_blueprint(admin_routes.bp, url_prefix='/admin')
 app.register_blueprint(driver_routes.bp, url_prefix='/driver')
 
-# Import face recognition service for SocketIO (lazy import - only when needed)
-# from backend.services.face_recognition_service import get_recognition_service
-
 
 # SocketIO Event Handlers for Real-time Face Recognition
 @socketio.on('connect')
 def handle_connect():
     """Handle client connection"""
-    print(f"Client connected: {request.sid}")
+    logger.debug(f"Client connected: {request.sid}")
     emit('connected', {'message': 'Connected to server'})
 
 
@@ -91,9 +91,8 @@ def handle_disconnect():
         recognition_service = get_recognition_service()
         recognition_service.stop_recognition(request.sid)
     except Exception as e:
-        logger = logging.getLogger(__name__)
         logger.debug(f"Error stopping recognition on disconnect: {e}")
-    print(f"Client disconnected: {request.sid}")
+    logger.debug(f"Client disconnected: {request.sid}")
 
 
 @socketio.on('start_recognition')
@@ -115,15 +114,11 @@ def handle_start_recognition(data):
         if not bus_id:
             # Get driver's bus
             from backend.models import Bus
-            try:
-                bus = Bus.query.filter_by(driver_id=current_user.id).first()
-                if not bus:
-                    emit('error', {'message': 'No bus assigned to you'})
-                    return
-                bus_id = bus.id
-            finally:
-                # Ensure session is closed after query
-                db.session.close()
+            bus = Bus.query.filter_by(driver_id=current_user.id).first()
+            if not bus:
+                emit('error', {'message': 'No bus assigned to you'})
+                return
+            bus_id = bus.id
         
         recognition_service = get_recognition_service()
         success = recognition_service.start_recognition(
@@ -157,7 +152,6 @@ def handle_stop_recognition():
         recognition_service.stop_recognition(request.sid)
         emit('recognition_stopped', {'message': 'Recognition stopped'})
     except Exception as e:
-        logger = logging.getLogger(__name__)
         logger.error(f"Error in stop_recognition: {e}")
         emit('error', {'message': 'Failed to stop recognition'})
 
@@ -188,45 +182,23 @@ def handle_video_frame(data):
             # Emit recognition result
             emit('recognition_result', result)
     except Exception as e:
-        logger = logging.getLogger(__name__)
         logger.debug(f"Error in handle_video_frame: {e}")
-        # Ensure session is cleaned up on error
-        try:
-            db.session.rollback()
-            db.session.close()
-        except:
-            pass
         # Don't emit error to avoid spamming client
         pass
 
 # Setup login manager user loader
 @login_manager.user_loader
 def load_user(user_id):
-    """Load user for Flask-Login with proper session management"""
+    """Load user for Flask-Login"""
     try:
-        # Use get() which is safer than query.get() in threading mode
         user = User.query.filter_by(id=int(user_id)).first()
-        # Don't close session here - Flask-Login manages it
-        # But ensure we handle errors properly
         return user
     except (ValueError, TypeError):
         return None
     except Exception as e:
-        logger = logging.getLogger(__name__)
         logger.error(f"Error loading user {user_id}: {e}")
-        # Clean up session on error to prevent connection leaks
-        try:
-            db.session.rollback()
-            db.session.close()
-        except:
-            pass
         return None
 
-
-@app.route('/test')
-def test():
-    """Simple test route to verify server is working"""
-    return "<h1>Server is working!</h1><p>If you see this, the server is responding.</p><a href='/'>Go to home</a>"
 
 @app.route('/')
 def index():

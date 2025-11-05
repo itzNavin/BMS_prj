@@ -7,7 +7,6 @@ import os
 import sys
 import base64
 import binascii  # For base64 error handling
-import io
 import cv2
 import numpy as np
 import threading

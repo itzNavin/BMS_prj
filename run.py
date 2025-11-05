@@ -14,8 +14,6 @@ project_root = Path(__file__).parent.absolute()
 sys.path.insert(0, str(project_root))
 
 # Global reference for cleanup
-_socketio_instance = None
-_recognition_service = None
 _shutdown_event = threading.Event()
 
 def signal_handler(sig, frame):
@@ -49,8 +47,6 @@ if __name__ == '__main__':
     
     from backend.app import app, create_tables, socketio
     import config
-    
-    _socketio_instance = socketio
     
     # Create tables on first run
     print("Initializing database...")
