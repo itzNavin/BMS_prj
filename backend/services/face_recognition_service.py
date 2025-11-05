@@ -405,6 +405,19 @@ class BusRecognitionService:
         """Get session information"""
         with self._lock:
             return self.active_sessions.get(session_id)
+    
+    def stop_all_sessions(self):
+        """Stop all active recognition sessions (for graceful shutdown)"""
+        # Get copy of session IDs to avoid iteration issues
+        with self._lock:
+            session_ids = list(self.active_sessions.keys())
+        
+        # Stop each session (stop_recognition will acquire its own lock)
+        for session_id in session_ids:
+            try:
+                self.stop_recognition(session_id)
+            except Exception as e:
+                logger.error(f"Error stopping session {session_id}: {e}")
 
 
 # Global instance (singleton pattern)
