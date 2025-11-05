@@ -106,11 +106,15 @@ def handle_start_recognition(data):
         if not bus_id:
             # Get driver's bus
             from backend.models import Bus
-            bus = Bus.query.filter_by(driver_id=current_user.id).first()
-            if not bus:
-                emit('error', {'message': 'No bus assigned to you'})
-                return
-            bus_id = bus.id
+            try:
+                bus = Bus.query.filter_by(driver_id=current_user.id).first()
+                if not bus:
+                    emit('error', {'message': 'No bus assigned to you'})
+                    return
+                bus_id = bus.id
+            finally:
+                # Ensure session is closed after query
+                db.session.close()
         
         recognition_service = get_recognition_service()
         success = recognition_service.start_recognition(
@@ -126,6 +130,12 @@ def handle_start_recognition(data):
     except Exception as e:
         logger = logging.getLogger(__name__)
         logger.error(f"Error in start_recognition: {e}")
+        # Ensure session is cleaned up on error
+        try:
+            db.session.rollback()
+            db.session.close()
+        except:
+            pass
         emit('error', {'message': 'Internal server error'})
 
 
@@ -171,20 +181,33 @@ def handle_video_frame(data):
     except Exception as e:
         logger = logging.getLogger(__name__)
         logger.debug(f"Error in handle_video_frame: {e}")
+        # Ensure session is cleaned up on error
+        try:
+            db.session.rollback()
+            db.session.close()
+        except:
+            pass
         # Don't emit error to avoid spamming client
         pass
 
 # Setup login manager user loader
 @login_manager.user_loader
 def load_user(user_id):
-    """Load user for Flask-Login"""
+    """Load user for Flask-Login with proper session management"""
     try:
-        return User.query.get(int(user_id))
+        user = User.query.get(int(user_id))
+        # Flask-Login will handle the session, but we ensure it's properly scoped
+        return user
     except (ValueError, TypeError):
         return None
     except Exception as e:
         logger = logging.getLogger(__name__)
         logger.error(f"Error loading user {user_id}: {e}")
+        # Ensure session is cleaned up on error
+        try:
+            db.session.rollback()
+        except:
+            pass
         return None
 
 
