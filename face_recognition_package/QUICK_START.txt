@@ -1,0 +1,69 @@
+╔══════════════════════════════════════════════════════════════╗
+║        Face Recognition System - Quick Start Guide           ║
+╚══════════════════════════════════════════════════════════════╝
+
+STEP 1: Install Dependencies
+─────────────────────────────
+Open terminal/command prompt in this folder and run:
+    pip install -r requirements.txt
+
+Note: First-time installation may take 5-10 minutes as it downloads AI models.
+
+
+STEP 2: Add Face Images
+───────────────────────
+Add face photos to the "database" folder:
+    - Supported formats: .jpg, .jpeg, .png, .bmp
+    - Use clear, front-facing photos
+    - Good lighting, neutral expression
+    - Minimum 200x200 pixels resolution
+
+
+STEP 3: Run the System
+──────────────────────
+    python advanced_realtime_recognition.py
+
+That's it! The system will:
+    ✓ Load models (first time takes longer)
+    ✓ Open your camera
+    ✓ Recognize faces in real-time
+
+
+CONTROLS:
+─────────
+    Press 'q'  →  Quit
+    Press 'r'  →  Reset statistics  
+    Press 'f'  →  Refresh database (after adding new faces)
+
+
+ADDING NEW FACES:
+─────────────────
+Method 1: Automatic (Recommended)
+    - Just add images to database folder
+    - System auto-detects changes (checks every 5 seconds)
+
+Method 2: Manual
+    - Add images to database folder
+    - Press 'f' key during runtime
+    - Wait ~10-30 seconds for processing
+
+
+TROUBLESHOOTING:
+───────────────
+Camera not opening?
+    → Check if another app is using the camera
+    → Try changing camera_source in recognition_config.json
+
+Slow performance?
+    → Increase "frame_skip" in recognition_config.json (e.g., 5 → 10)
+
+Poor recognition?
+    → Improve image quality in database folder
+    → Add 2-3 images per person
+    → Lower "confidence_threshold" in config
+
+
+For detailed instructions, see README.md
+
+═══════════════════════════════════════════════════════════════
+

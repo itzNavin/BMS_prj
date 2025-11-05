@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>🚌 Bus Management System</h2>
+            <p>Please login to continue</p>
+        </div>
+
+        <form method="POST" action="{{ url_for('auth.login') }}" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    class="form-control" 
+                    required 
+                    autofocus
+                    placeholder="Enter your username"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    class="form-control" 
+                    required
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="remember" value="true">
+                    Remember me
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <div class="auth-footer">
+            <p class="demo-info">
+                <strong>Demo Credentials:</strong><br>
+                Admin: username='admin', password='admin123'<br>
+                Driver: username='driver1', password='driver123'
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

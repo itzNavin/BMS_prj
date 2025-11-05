@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Add Bus - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Add New Bus</h1>
+    <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Back to Buses</a>
+</div>
+
+<div class="card">
+    <form method="POST" class="auth-form">
+        <div class="form-group">
+            <label for="bus_number">Bus Number *</label>
+            <input type="text" id="bus_number" name="bus_number" class="form-control" required 
+                   placeholder="e.g., BUS001">
+        </div>
+
+        <div class="form-group">
+            <label for="route_name">Route Name</label>
+            <input type="text" id="route_name" name="route_name" class="form-control" 
+                   placeholder="e.g., North Route">
+        </div>
+
+        <div class="form-group">
+            <label for="driver_id">Driver</label>
+            <select id="driver_id" name="driver_id" class="form-control">
+                <option value="">Not assigned</option>
+                {% for driver in drivers %}
+                    <option value="{{ driver.id }}">{{ driver.username }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="capacity">Capacity</label>
+            <input type="number" id="capacity" name="capacity" class="form-control" 
+                   value="50" min="1" max="100">
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Add Bus</button>
+            <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+

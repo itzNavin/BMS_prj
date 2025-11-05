@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Bus Management - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Bus Management</h1>
+    <a href="{{ url_for('admin.add_bus') }}" class="btn btn-primary">Add New Bus</a>
+</div>
+
+<div class="card">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Bus Number</th>
+                    <th>Route</th>
+                    <th>Driver</th>
+                    <th>Capacity</th>
+                    <th>Students</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if buses %}
+                    {% for bus in buses %}
+                    <tr>
+                        <td>{{ bus.bus_number }}</td>
+                        <td>{{ bus.route_name or 'N/A' }}</td>
+                        <td>{{ bus.driver.username if bus.driver else 'Not assigned' }}</td>
+                        <td>{{ bus.capacity }}</td>
+                        <td>{{ bus.get_student_count() }}</td>
+                        <td>
+                            <a href="{{ url_for('admin.assign_students', bus_id=bus.id) }}" 
+                               class="btn btn-primary" style="padding: 0.25rem 0.75rem; font-size: 0.875rem; margin-right: 0.5rem;">
+                                Assign Students
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="6" class="text-center">No buses found. <a href="{{ url_for('admin.add_bus') }}">Add your first bus</a></td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+

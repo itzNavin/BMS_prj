@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Driver Dashboard - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Driver Dashboard</h1>
+    <p>Welcome, {{ current_user.username }}!</p>
+</div>
+
+{% if stats.bus %}
+<div class="card">
+    <div class="card-header">
+        <h3>Your Bus Information</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Bus Number:</strong> {{ stats.bus.bus_number }}</p>
+        <p><strong>Route:</strong> {{ stats.bus.route_name or 'N/A' }}</p>
+        <p><strong>Assigned Students:</strong> {{ stats.bus.get_student_count() }}</p>
+        <p><strong>Capacity:</strong> {{ stats.bus.capacity }}</p>
+    </div>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <h3>Today's Total Entries</h3>
+        <div class="value">{{ stats.today_total }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Access Granted</h3>
+        <div class="value" style="color: var(--success-color);">{{ stats.today_granted }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Access Denied</h3>
+        <div class="value" style="color: var(--error-color);">{{ stats.today_denied }}</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <a href="{{ url_for('driver.scanning') }}" class="btn btn-primary btn-block" style="font-size: 1.25rem; padding: 1rem;">
+            🎥 Start Face Scanning
+        </a>
+    </div>
+</div>
+{% else %}
+<div class="card">
+    <div class="card-body">
+        <p style="color: var(--error-color);">
+            <strong>No bus assigned.</strong> Please contact the administrator to assign a bus to your account.
+        </p>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+

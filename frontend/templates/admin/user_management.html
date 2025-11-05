@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}User Management - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>User Management</h1>
+    <a href="{{ url_for('auth.register') }}" class="btn btn-primary">Add New User</a>
+</div>
+
+<div class="card">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if users %}
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user.username }}</td>
+                        <td>
+                            <span style="padding: 0.25rem 0.75rem; border-radius: 0.25rem; 
+                                background-color: {% if user.role == 'admin' %}var(--primary-color){% else %}var(--secondary-color){% endif %}; 
+                                color: white;">
+                                {{ user.role|title }}
+                            </span>
+                        </td>
+                        <td>{{ user.created_at.strftime('%Y-%m-%d') if user.created_at else 'N/A' }}</td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="3" class="text-center">No users found.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+

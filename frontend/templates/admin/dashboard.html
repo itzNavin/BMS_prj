@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <p>Welcome, {{ current_user.username }}! Manage students, buses, and view system activity.</p>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <h3>Total Students</h3>
+        <div class="value">{{ stats.total_students }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Total Buses</h3>
+        <div class="value">{{ stats.total_buses }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Total Drivers</h3>
+        <div class="value">{{ stats.total_drivers }}</div>
+    </div>
+    <div class="stat-card">
+        <h3>Today's Entries</h3>
+        <div class="value">{{ stats.today_entries }}</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Quick Actions</h3>
+    </div>
+    <div class="card-body">
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="{{ url_for('admin.add_student') }}" class="btn btn-primary">Add Student</a>
+            <a href="{{ url_for('admin.add_bus') }}" class="btn btn-primary">Add Bus</a>
+            <a href="{{ url_for('admin.students') }}" class="btn btn-secondary">Manage Students</a>
+            <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Manage Buses</a>
+            <a href="{{ url_for('admin.logs') }}" class="btn btn-secondary">View Logs</a>
+            <a href="{{ url_for('admin.users') }}" class="btn btn-secondary">Manage Users</a>
+        </div>
+    </div>
+</div>
+
+{% if recent_logs %}
+<div class="card">
+    <div class="card-header">
+        <h3>Recent Authentication Logs</h3>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Student</th>
+                    <th>Bus</th>
+                    <th>Driver</th>
+                    <th>Status</th>
+                    <th>Confidence</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in recent_logs %}
+                <tr>
+                    <td>{{ log.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>{{ log.student.name if log.student else 'N/A' }}</td>
+                    <td>{{ log.bus.bus_number if log.bus else 'N/A' }}</td>
+                    <td>{{ log.driver_user.username if log.driver_user else 'N/A' }}</td>
+                    <td>
+                        {% if log.access_granted %}
+                            <span style="color: var(--success-color);">✓ Granted</span>
+                        {% else %}
+                            <span style="color: var(--error-color);">✗ Denied</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ "%.1f"|format(log.recognition_confidence) if log.recognition_confidence else 'N/A' }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,6 @@
+# This file ensures the database folder is included in version control
+# Delete this file if you don't need it
+# 
+# Note: The .pkl files (database embeddings) are ignored by .gitignore
+# They will be regenerated automatically when you run the system
+

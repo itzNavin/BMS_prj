@@ -1,0 +1,28 @@
+# Ignore log files
+*.log
+recognition_log_*.json
+
+# Ignore generated files
+*.pkl
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore output videos (if enabled)
+*.mp4
+
+# Ignore Python virtual environments
+venv/
+env/
+ENV/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+

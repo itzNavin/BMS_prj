@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Student Management - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Student Management</h1>
+    <a href="{{ url_for('admin.add_student') }}" class="btn btn-primary">Add New Student</a>
+</div>
+
+<div class="card">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                    <th>Bus Assignment</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if students %}
+                    {% for student in students %}
+                    <tr>
+                        <td>{{ student.student_id }}</td>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.class_name or 'N/A' }}</td>
+                        <td>{{ student.section or 'N/A' }}</td>
+                        <td>
+                            {% set assignment = student.get_active_bus_assignment() %}
+                            {% if assignment %}
+                                Bus {{ assignment.bus.bus_number }}
+                            {% else %}
+                                <span style="color: var(--secondary-color);">Not assigned</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <form method="POST" action="{{ url_for('admin.delete_student', student_id=student.id) }}" 
+                                  onsubmit="return confirmAction('Are you sure you want to delete {{ student.name }}?')" 
+                                  style="display: inline;">
+                                <button type="submit" class="btn btn-danger" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="6" class="text-center">No students found. <a href="{{ url_for('admin.add_student') }}">Add your first student</a></td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+

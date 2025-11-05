@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Assign Students - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Assign Students to Bus {{ bus.bus_number }}</h1>
+    <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Back to Buses</a>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Bus Information</h3>
+        <p>Route: {{ bus.route_name or 'N/A' }} | Driver: {{ bus.driver.username if bus.driver else 'Not assigned' }}</p>
+    </div>
+
+    <form method="POST" class="auth-form">
+        <div class="form-group">
+            <label>Select Students (Currently assigned: {{ assigned_student_ids|length }})</label>
+            <div style="max-height: 400px; overflow-y: auto; border: 1px solid var(--border-color); border-radius: 0.375rem; padding: 1rem;">
+                {% if students %}
+                    {% for student in students %}
+                        <label class="checkbox-label" style="display: block; padding: 0.5rem;">
+                            <input type="checkbox" name="student_ids" value="{{ student.id }}" 
+                                   {% if student.id in assigned_student_ids %}checked{% endif %}>
+                            <span>{{ student.name }} ({{ student.student_id }}) - {{ student.class_name or 'N/A' }}</span>
+                        </label>
+                    {% endfor %}
+                {% else %}
+                    <p style="color: var(--secondary-color);">No students available. <a href="{{ url_for('admin.add_student') }}">Add students first</a></p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save Assignments</button>
+            <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+

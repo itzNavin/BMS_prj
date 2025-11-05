@@ -1,0 +1,29 @@
+# Face Recognition System - Requirements
+# Install these packages using: pip install -r requirements.txt
+# 
+# NOTE: First-time installation may take 5-10 minutes as it downloads AI models
+# Make sure you have a stable internet connection
+
+# Core face recognition library (includes TensorFlow, Keras automatically)
+deepface>=0.0.90
+
+# Computer Vision
+opencv-python>=4.5.5
+
+# Data Processing
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Image Processing
+Pillow>=8.0.0
+
+# Utilities
+tqdm>=4.60.0
+
+# DeepFace will automatically install these dependencies, but listing for clarity:
+# tensorflow (or tensorflow-cpu for CPU-only systems)
+# keras
+# gdown (for downloading models)
+# flask (if using API features)
+# matplotlib (for some utilities)
+
