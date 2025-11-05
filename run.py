@@ -4,7 +4,9 @@ Convenience script to start the Flask application
 """
 
 import sys
+import os
 import signal
+import threading
 from pathlib import Path
 
 # Add project root to path
@@ -14,9 +16,16 @@ sys.path.insert(0, str(project_root))
 # Global reference for cleanup
 _socketio_instance = None
 _recognition_service = None
+_shutdown_event = threading.Event()
 
 def signal_handler(sig, frame):
     """Handle Ctrl+C gracefully"""
+    # Prevent multiple calls
+    if _shutdown_event.is_set():
+        print("\n⚠️  Force exit...")
+        os._exit(1)
+    
+    _shutdown_event.set()
     print("\n\n🛑 Shutting down gracefully...")
     
     # Stop all recognition sessions
@@ -28,9 +37,9 @@ def signal_handler(sig, frame):
     except Exception as e:
         print(f"⚠️  Error stopping recognition sessions: {e}")
     
-    # Exit gracefully
+    # Exit gracefully - use os._exit to force immediate termination
     print("✅ Shutdown complete")
-    sys.exit(0)
+    os._exit(0)
 
 # Import and run app
 if __name__ == '__main__':
@@ -61,7 +70,10 @@ if __name__ == '__main__':
     print("\n💡 Press Ctrl+C to stop the server\n")
     
     try:
-        socketio.run(app, host='0.0.0.0', port=5000, debug=config.DEBUG, use_reloader=False)
+        socketio.run(app, host='0.0.0.0', port=5000, debug=config.DEBUG, use_reloader=False, allow_unsafe_werkzeug=True)
     except KeyboardInterrupt:
         signal_handler(signal.SIGINT, None)
+    except SystemExit:
+        # Already handled by signal handler
+        pass
 
