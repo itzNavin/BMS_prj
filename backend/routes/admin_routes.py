@@ -230,3 +230,60 @@ def users():
     users_list = User.query.order_by(User.username).all()
     return render_template('admin/user_management.html', users=users_list)
 
+
+@bp.route('/drivers/add', methods=['GET', 'POST'])
+@admin_required
+def add_driver():
+    """Add new driver"""
+    if request.method == 'POST':
+        try:
+            username = request.form.get('username', '').strip()
+            password = request.form.get('password', '').strip()
+            
+            # Validate
+            if not username or not password:
+                flash('Username and Password are required.', 'error')
+                return render_template('admin/add_driver.html')
+            
+            # Check if username already exists
+            if User.query.filter_by(username=username).first():
+                flash('Username already exists. Please choose a different username.', 'error')
+                return render_template('admin/add_driver.html')
+            
+            # Create driver user
+            from werkzeug.security import generate_password_hash
+            driver = User(
+                username=username,
+                password_hash=generate_password_hash(password),
+                role='driver'
+            )
+            
+            db.session.add(driver)
+            db.session.commit()
+            
+            flash(f'Driver {username} added successfully!', 'success')
+            return redirect(url_for('admin.users'))
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Error: {str(e)}', 'error')
+    
+    return render_template('admin/add_driver.html')
+
+
+@bp.route('/logs/clear', methods=['POST'])
+@admin_required
+def clear_logs():
+    """Clear all authentication logs"""
+    try:
+        deleted_count = AuthenticationLog.query.delete()
+        db.session.commit()
+        flash(f'Successfully cleared {deleted_count} authentication log(s).', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Error clearing logs: {str(e)}', 'error')
+    
+    # Redirect back to the page that called this
+    referer = request.headers.get('Referer')
+    if referer and 'logs' in referer:
+        return redirect(url_for('admin.logs'))
+    return redirect(url_for('admin.dashboard'))

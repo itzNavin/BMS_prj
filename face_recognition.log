@@ -2732,3 +2732,623 @@ cv2.error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\objdet
 2025-11-05 14:09:18,694 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:09:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
 2025-11-05 14:10:34,974 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:10:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-11-05 14:10:35,050 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:10:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-11-05 14:32:37,304 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:32:37,305 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:32:37,306 - werkzeug - INFO -  * Restarting with stat
+2025-11-05 14:32:51,332 - werkzeug - WARNING -  * Debugger is active!
+2025-11-05 14:32:51,381 - werkzeug - INFO -  * Debugger PIN: 638-552-971
+2025-11-05 14:38:51,172 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:38:51,172 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:38:51,173 - werkzeug - INFO -  * Restarting with stat
+2025-11-05 14:39:03,586 - werkzeug - WARNING -  * Debugger is active!
+2025-11-05 14:39:03,596 - werkzeug - INFO -  * Debugger PIN: 638-552-971
+2025-11-05 14:39:04,154 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:04] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-05 14:39:04,287 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:04] "GET /auth/login HTTP/1.1" 200 -
+2025-11-05 14:39:04,848 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:39:05,087 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:39:06,066 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-05 14:39:18,361 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:18] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-11-05 14:39:18,411 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:18] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:39:18,500 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:39:18,823 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:39:24,122 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:24] "GET /driver/scanning HTTP/1.1" 200 -
+2025-11-05 14:39:24,414 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:39:24,538 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:39:24,539 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:24] "[36mGET /static/js/face_scanning.js HTTP/1.1[0m" 304 -
+2025-11-05 14:39:24,903 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:24] "GET /socket.io/?EIO=4&transport=polling&t=PfJHold HTTP/1.1" 200 -
+2025-11-05 14:39:25,185 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:25] "POST /socket.io/?EIO=4&transport=polling&t=PfJHoqh&sid=L17m9l6WNN1AxXDbAAAA HTTP/1.1" 200 -
+2025-11-05 14:39:25,226 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:25] "GET /socket.io/?EIO=4&transport=polling&t=PfJHorH&sid=L17m9l6WNN1AxXDbAAAA HTTP/1.1" 200 -
+2025-11-05 14:39:25,255 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:39:25] "GET /socket.io/?EIO=4&transport=polling&t=PfJHovk&sid=L17m9l6WNN1AxXDbAAAA HTTP/1.1" 200 -
+2025-11-05 14:39:29,161 - backend.services.face_recognition_service - INFO - Started recognition session pnedOai_uP_NCSFkAAAB for bus 1
+2025-11-05 14:39:29,523 - backend.services.face_recognition_service - INFO - Initializing face recognition service (first time)...
+2025-11-05 14:39:29,526 - utils.face_recognition_service - INFO - Face recognition database path: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:39:29,527 - utils.face_recognition_service - INFO - Creating face recognition system (singleton, first time only)...
+2025-11-05 14:39:29,529 - advanced_realtime_recognition - INFO - Database initialized with 9 images in C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:39:29,530 - advanced_realtime_recognition - INFO - Initializing face recognition models...
+2025-11-05 14:39:29,530 - advanced_realtime_recognition - INFO - Loading models...
+2025-11-05 14:39:36,685 - advanced_realtime_recognition - INFO - Recognition model 'VGG-Face' loaded
+2025-11-05 14:39:36,691 - advanced_realtime_recognition - INFO - Models validated and ready for real-time recognition
+2025-11-05 14:39:36,692 - advanced_realtime_recognition - INFO - [SUCCESS] Face Recognition System initialized successfully!
+2025-11-05 14:39:36,692 - advanced_realtime_recognition - INFO -    - Database: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:39:36,694 - advanced_realtime_recognition - INFO -    - Model: VGG-Face
+2025-11-05 14:39:36,695 - advanced_realtime_recognition - INFO -    - Detector: opencv
+2025-11-05 14:39:36,695 - advanced_realtime_recognition - INFO - Ready to start camera...
+2025-11-05 14:39:36,696 - utils.face_recognition_service - INFO - Face recognition system initialized successfully (shared instance)
+2025-11-05 14:39:36,697 - backend.services.face_recognition_service - INFO - Face recognition service initialized successfully
+2025-11-05 14:39:36,792 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,797 - advanced_realtime_recognition - INFO - Refreshing database embeddings (this may take a moment)...
+2025-11-05 14:39:36,799 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,799 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,801 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,802 - advanced_realtime_recognition - INFO - Processing all images in database - please wait...
+2025-11-05 14:39:36,804 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,808 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,810 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,810 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,813 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,813 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,813 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,814 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,815 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,826 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,818 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,819 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,819 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,819 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,820 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,820 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,821 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,822 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,822 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,823 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,823 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,824 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,825 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,816 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,827 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,828 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,828 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,829 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:39:36,829 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:18,590 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:41:18,590 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:41:18,591 - werkzeug - INFO -  * Restarting with stat
+2025-11-05 14:41:30,777 - werkzeug - WARNING -  * Debugger is active!
+2025-11-05 14:41:30,790 - werkzeug - INFO -  * Debugger PIN: 638-552-971
+2025-11-05 14:41:31,323 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:31] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-05 14:41:31,378 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:31] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:41:31,627 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:41:31,764 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:41:34,811 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:34] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-11-05 14:41:35,119 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:35] "GET /auth/login HTTP/1.1" 200 -
+2025-11-05 14:41:35,508 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:41:35,509 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:41:44,157 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:44] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-11-05 14:41:44,175 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:44] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:41:44,577 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:41:44,580 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:41:47,571 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:47] "GET /driver/scanning HTTP/1.1" 200 -
+2025-11-05 14:41:47,837 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:41:47,969 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:41:47,970 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:47] "[36mGET /static/js/face_scanning.js HTTP/1.1[0m" 304 -
+2025-11-05 14:41:48,290 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:48] "GET /socket.io/?EIO=4&transport=polling&t=PfJILmD HTTP/1.1" 200 -
+2025-11-05 14:41:48,558 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:48] "POST /socket.io/?EIO=4&transport=polling&t=PfJILr6&sid=JplTblJmZk5nvI3IAAAA HTTP/1.1" 200 -
+2025-11-05 14:41:48,615 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:48] "GET /socket.io/?EIO=4&transport=polling&t=PfJILrA&sid=JplTblJmZk5nvI3IAAAA HTTP/1.1" 200 -
+2025-11-05 14:41:48,652 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:41:48] "GET /socket.io/?EIO=4&transport=polling&t=PfJILwf&sid=JplTblJmZk5nvI3IAAAA HTTP/1.1" 200 -
+2025-11-05 14:41:52,277 - backend.services.face_recognition_service - INFO - Started recognition session TR9RZx6biiFM_JS9AAAB for bus 1
+2025-11-05 14:41:52,498 - backend.services.face_recognition_service - INFO - Initializing face recognition service (first time)...
+2025-11-05 14:41:52,502 - utils.face_recognition_service - INFO - Face recognition database path: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:41:52,502 - utils.face_recognition_service - INFO - Creating face recognition system (singleton, first time only)...
+2025-11-05 14:41:52,505 - advanced_realtime_recognition - INFO - Database initialized with 9 images in C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:41:52,506 - advanced_realtime_recognition - INFO - Initializing face recognition models...
+2025-11-05 14:41:52,506 - advanced_realtime_recognition - INFO - Loading models...
+2025-11-05 14:41:56,144 - advanced_realtime_recognition - INFO - Recognition model 'VGG-Face' loaded
+2025-11-05 14:41:56,152 - advanced_realtime_recognition - INFO - Models validated and ready for real-time recognition
+2025-11-05 14:41:56,153 - advanced_realtime_recognition - INFO - [SUCCESS] Face Recognition System initialized successfully!
+2025-11-05 14:41:56,153 - advanced_realtime_recognition - INFO -    - Database: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:41:56,154 - advanced_realtime_recognition - INFO -    - Model: VGG-Face
+2025-11-05 14:41:56,154 - advanced_realtime_recognition - INFO -    - Detector: opencv
+2025-11-05 14:41:56,154 - advanced_realtime_recognition - INFO - Ready to start camera...
+2025-11-05 14:41:56,155 - utils.face_recognition_service - INFO - Face recognition system initialized successfully (shared instance)
+2025-11-05 14:41:56,155 - backend.services.face_recognition_service - INFO - Face recognition service initialized successfully
+2025-11-05 14:41:56,359 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,360 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,361 - advanced_realtime_recognition - INFO - Refreshing database embeddings (this may take a moment)...
+2025-11-05 14:41:56,362 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,363 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,364 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,365 - advanced_realtime_recognition - INFO - Processing all images in database - please wait...
+2025-11-05 14:41:56,365 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,366 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,366 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,366 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,366 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,367 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,367 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,368 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,368 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,368 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,369 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,369 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:41:56,370 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:42:07,546 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6152, threshold=0.6800, confidence=56.56%
+2025-11-05 14:42:07,467 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6255, threshold=0.6800, confidence=55.57%
+2025-11-05 14:42:07,474 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6085, threshold=0.6800, confidence=57.22%
+2025-11-05 14:42:07,691 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6151, threshold=0.6800, confidence=56.57%
+2025-11-05 14:42:07,799 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 56.56%, distance: 0.6152, threshold: 0.6800, time: 8974.6ms)
+2025-11-05 14:42:09,401 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6032, threshold=0.6800, confidence=57.76%
+2025-11-05 14:42:12,470 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6213, threshold=0.6800, confidence=55.96%
+2025-11-05 14:42:12,478 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.96%, distance: 0.6213, threshold: 0.6800, time: 13685.4ms)
+2025-11-05 14:42:13,632 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6263, threshold=0.6800, confidence=55.49%
+2025-11-05 14:42:16,077 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6458, threshold=0.6800, confidence=53.71%
+2025-11-05 14:42:16,086 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 53.71%, distance: 0.6458, threshold: 0.6800, time: 19607.3ms)
+2025-11-05 14:42:16,799 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6228, threshold=0.6800, confidence=55.83%
+2025-11-05 14:42:17,018 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6292, threshold=0.6800, confidence=55.22%
+2025-11-05 14:42:17,196 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5870, threshold=0.6800, confidence=59.42%
+2025-11-05 14:42:17,206 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 59.42%, distance: 0.5870, threshold: 0.6800, time: 16565.0ms)
+2025-11-05 14:42:17,486 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6248, threshold=0.6800, confidence=55.63%
+2025-11-05 14:42:17,496 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.63%, distance: 0.6248, threshold: 0.6800, time: 21137.3ms)
+2025-11-05 14:42:17,646 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6147, threshold=0.6800, confidence=56.61%
+2025-11-05 14:42:17,657 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 56.61%, distance: 0.6147, threshold: 0.6800, time: 17722.8ms)
+2025-11-05 14:42:17,812 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6306, threshold=0.6800, confidence=55.09%
+2025-11-05 14:42:17,832 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.09%, distance: 0.6306, threshold: 0.6800, time: 21464.7ms)
+2025-11-05 14:42:17,968 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6301, threshold=0.6800, confidence=55.14%
+2025-11-05 14:42:17,977 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.14%, distance: 0.6301, threshold: 0.6800, time: 16930.2ms)
+2025-11-05 14:42:18,137 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.5854, threshold=0.6800, confidence=59.59%
+2025-11-05 14:42:18,143 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 59.59%, distance: 0.5854, threshold: 0.6800, time: 14809.7ms)
+2025-11-05 14:42:18,357 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6359, threshold=0.6800, confidence=54.60%
+2025-11-05 14:42:18,459 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6186, threshold=0.6800, confidence=56.23%
+2025-11-05 14:42:19,990 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6224, threshold=0.6800, confidence=55.86%
+2025-11-05 14:42:19,997 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.86%, distance: 0.6224, threshold: 0.6800, time: 20995.4ms)
+2025-11-05 14:42:21,677 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6150, threshold=0.6800, confidence=56.58%
+2025-11-05 14:42:21,754 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 56.58%, distance: 0.6150, threshold: 0.6800, time: 20144.2ms)
+2025-11-05 14:42:21,821 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6004, threshold=0.6800, confidence=58.03%
+2025-11-05 14:42:22,160 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.5861, threshold=0.6800, confidence=59.52%
+2025-11-05 14:42:22,335 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6232, threshold=0.6800, confidence=55.79%
+2025-11-05 14:42:22,478 - advanced_realtime_recognition - INFO - [SUCCESS] Database embeddings refreshed successfully!
+2025-11-05 14:42:22,689 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6065, threshold=0.6800, confidence=57.42%
+2025-11-05 14:42:23,171 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6596, threshold=0.6800, confidence=52.50%
+2025-11-05 14:42:23,455 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6054, threshold=0.6800, confidence=57.53%
+2025-11-05 14:42:23,462 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 57.53%, distance: 0.6054, threshold: 0.6800, time: 23311.1ms)
+2025-11-05 14:42:23,782 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6058, threshold=0.6800, confidence=57.48%
+2025-11-05 14:42:24,697 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6301, threshold=0.6800, confidence=55.14%
+2025-11-05 14:42:24,709 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.14%, distance: 0.6301, threshold: 0.6800, time: 26343.6ms)
+2025-11-05 14:42:25,637 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6432, threshold=0.6800, confidence=53.94%
+2025-11-05 14:42:26,261 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6208, threshold=0.6800, confidence=56.02%
+2025-11-05 14:42:26,461 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6193, threshold=0.6800, confidence=56.16%
+2025-11-05 14:42:26,729 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6212, threshold=0.6800, confidence=55.98%
+2025-11-05 14:42:26,776 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.98%, distance: 0.6212, threshold: 0.6800, time: 29230.1ms)
+2025-11-05 14:42:26,917 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6195, threshold=0.6800, confidence=56.14%
+2025-11-05 14:42:26,919 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6789, threshold=0.6800, confidence=51.00%
+2025-11-05 14:42:27,076 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.00%, distance: 0.6789, threshold: 0.6800, time: 18341.8ms)
+2025-11-05 14:42:27,084 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.5920, threshold=0.6800, confidence=58.90%
+2025-11-05 14:42:27,126 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 58.90%, distance: 0.5920, threshold: 0.6800, time: 23994.9ms)
+2025-11-05 14:42:27,509 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6121, threshold=0.6800, confidence=56.86%
+2025-11-05 14:42:27,560 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 56.86%, distance: 0.6121, threshold: 0.6800, time: 31163.1ms)
+2025-11-05 14:42:27,662 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6371, threshold=0.6800, confidence=54.49%
+2025-11-05 14:42:27,682 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6677, threshold=0.6800, confidence=51.83%
+2025-11-05 14:42:27,719 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6382, threshold=0.6800, confidence=54.39%
+2025-11-05 14:42:27,766 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 54.49%, distance: 0.6371, threshold: 0.6800, time: 31314.6ms)
+2025-11-05 14:42:27,796 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 51.83%, distance: 0.6677, threshold: 0.6800, time: 18358.7ms)
+2025-11-05 14:42:27,813 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6182, threshold=0.6800, confidence=56.26%
+2025-11-05 14:42:27,831 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 54.39%, distance: 0.6382, threshold: 0.6800, time: 31373.6ms)
+2025-11-05 14:42:27,955 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 56.26%, distance: 0.6182, threshold: 0.6800, time: 25180.9ms)
+2025-11-05 14:42:28,011 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6176, threshold=0.6800, confidence=56.32%
+2025-11-05 14:42:28,032 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 56.32%, distance: 0.6176, threshold: 0.6800, time: 31665.5ms)
+2025-11-05 14:42:28,285 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6538, threshold=0.6800, confidence=53.00%
+2025-11-05 14:42:28,490 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6283, threshold=0.6800, confidence=55.30%
+2025-11-05 14:42:28,500 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.30%, distance: 0.6283, threshold: 0.6800, time: 26756.9ms)
+2025-11-05 14:42:28,835 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6079, threshold=0.6800, confidence=57.28%
+2025-11-05 14:42:28,885 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 57.28%, distance: 0.6079, threshold: 0.6800, time: 32486.2ms)
+2025-11-05 14:42:28,916 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6575, threshold=0.6800, confidence=52.68%
+2025-11-05 14:42:28,924 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 52.68%, distance: 0.6575, threshold: 0.6800, time: 19272.2ms)
+2025-11-05 14:42:29,006 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6171, threshold=0.6800, confidence=56.38%
+2025-11-05 14:42:29,025 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 56.38%, distance: 0.6171, threshold: 0.6800, time: 31673.0ms)
+2025-11-05 14:42:29,037 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6250, threshold=0.6800, confidence=55.61%
+2025-11-05 14:42:29,058 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.61%, distance: 0.6250, threshold: 0.6800, time: 27075.1ms)
+2025-11-05 14:42:29,089 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6307, threshold=0.6800, confidence=55.08%
+2025-11-05 14:42:29,131 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.08%, distance: 0.6307, threshold: 0.6800, time: 32455.4ms)
+2025-11-05 14:42:29,350 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6264, threshold=0.6800, confidence=55.49%
+2025-11-05 14:42:29,378 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.49%, distance: 0.6264, threshold: 0.6800, time: 33004.3ms)
+2025-11-05 14:42:29,518 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5793, threshold=0.6800, confidence=60.24%
+2025-11-05 14:42:29,582 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6758, threshold=0.6800, confidence=51.18%
+2025-11-05 14:42:29,600 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 51.18%, distance: 0.6758, threshold: 0.6800, time: 22190.0ms)
+2025-11-05 14:42:29,697 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.5821, threshold=0.6800, confidence=59.94%
+2025-11-05 14:42:29,844 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.5893, threshold=0.6800, confidence=59.18%
+2025-11-05 14:42:29,850 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6767, threshold=0.6800, confidence=51.10%
+2025-11-05 14:42:29,854 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.10%, distance: 0.6767, threshold: 0.6800, time: 20170.7ms)
+2025-11-05 14:42:30,117 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6322, threshold=0.6800, confidence=54.94%
+2025-11-05 14:42:30,133 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 54.94%, distance: 0.6322, threshold: 0.6800, time: 33770.5ms)
+2025-11-05 14:42:30,396 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6746, threshold=0.6800, confidence=51.27%
+2025-11-05 14:42:30,401 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 51.27%, distance: 0.6746, threshold: 0.6800, time: 21048.1ms)
+2025-11-05 14:42:30,633 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6501, threshold=0.6800, confidence=53.33%
+2025-11-05 14:42:30,646 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 53.33%, distance: 0.6501, threshold: 0.6800, time: 22353.5ms)
+2025-11-05 14:42:31,886 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6351, threshold=0.6800, confidence=54.67%
+2025-11-05 14:42:32,389 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6766, threshold=0.6800, confidence=51.11%
+2025-11-05 14:42:32,393 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.11%, distance: 0.6766, threshold: 0.6800, time: 4569.4ms)
+2025-11-05 14:42:36,071 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6775, threshold=0.6800, confidence=51.04%
+2025-11-05 14:42:36,078 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.04%, distance: 0.6775, threshold: 0.6800, time: 3226.2ms)
+2025-11-05 14:42:38,486 - backend.services.face_recognition_service - INFO - Stopped recognition session TR9RZx6biiFM_JS9AAAB
+2025-11-05 14:42:40,975 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6704, threshold=0.6800, confidence=51.61%
+2025-11-05 14:42:40,983 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.61%, distance: 0.6704, threshold: 0.6800, time: 5673.0ms)
+2025-11-05 14:42:41,217 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:42:41] "POST /driver/api/log-recognition HTTP/1.1" 200 -
+2025-11-05 14:42:41,635 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:42:41] "GET /socket.io/?EIO=4&transport=websocket&sid=JplTblJmZk5nvI3IAAAA HTTP/1.1" 200 -
+2025-11-05 14:42:42,080 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6755, threshold=0.6800, confidence=51.20%
+2025-11-05 14:42:42,237 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6603, threshold=0.6800, confidence=52.45%
+2025-11-05 14:42:42,248 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 52.45%, distance: 0.6603, threshold: 0.6800, time: 5620.3ms)
+2025-11-05 14:42:42,398 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:42:42] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:42:42,532 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6760, threshold=0.6800, confidence=51.16%
+2025-11-05 14:42:42,541 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 51.16%, distance: 0.6760, threshold: 0.6800, time: 7048.4ms)
+2025-11-05 14:42:42,650 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6357, threshold=0.6800, confidence=54.61%
+2025-11-05 14:42:42,673 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 54.61%, distance: 0.6357, threshold: 0.6800, time: 7112.9ms)
+2025-11-05 14:42:42,897 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6599, threshold=0.6800, confidence=52.48%
+2025-11-05 14:42:42,904 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 52.48%, distance: 0.6599, threshold: 0.6800, time: 7563.7ms)
+2025-11-05 14:42:42,993 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6735, threshold=0.6800, confidence=51.36%
+2025-11-05 14:42:43,001 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:42:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:42:43,007 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6373, threshold=0.6800, confidence=54.47%
+2025-11-05 14:42:43,026 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 54.47%, distance: 0.6373, threshold: 0.6800, time: 7508.3ms)
+2025-11-05 14:42:43,037 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6432, threshold=0.6800, confidence=53.94%
+2025-11-05 14:42:43,161 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Hari\photo1.jpg - distance=0.6597, threshold=0.6800, confidence=52.50%
+2025-11-05 14:42:43,164 - advanced_realtime_recognition - INFO - Recognized: Hari (confidence: 52.50%, distance: 0.6597, threshold: 0.6800, time: 7784.2ms)
+2025-11-05 14:42:43,196 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6633, threshold=0.6800, confidence=52.19%
+2025-11-05 14:42:43,197 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 52.19%, distance: 0.6633, threshold: 0.6800, time: 5854.1ms)
+2025-11-05 14:42:43,268 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:42:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:26,554 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:47:26,555 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:47:34,321 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-05 14:47:34,418 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:34] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:47:34,829 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:47:34,832 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:35,051 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-05 14:47:39,797 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:39] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-11-05 14:47:39,817 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:39] "GET /auth/login HTTP/1.1" 200 -
+2025-11-05 14:47:39,925 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:47:39,932 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:48,971 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:48] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-11-05 14:47:48,988 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:48] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:47:49,136 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:49,137 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:47:50,683 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "GET /driver/scanning HTTP/1.1" 200 -
+2025-11-05 14:47:50,817 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:47:50,834 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:50,836 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "[36mGET /static/js/face_scanning.js HTTP/1.1[0m" 304 -
+2025-11-05 14:47:50,905 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "GET /socket.io/?EIO=4&transport=polling&t=PfJJkMS HTTP/1.1" 200 -
+2025-11-05 14:47:50,926 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "POST /socket.io/?EIO=4&transport=polling&t=PfJJkM_&sid=EmdOMgFCP39oASc6AAAA HTTP/1.1" 200 -
+2025-11-05 14:47:50,939 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "GET /socket.io/?EIO=4&transport=polling&t=PfJJkN8&sid=EmdOMgFCP39oASc6AAAA HTTP/1.1" 200 -
+2025-11-05 14:47:50,953 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:47:50] "GET /socket.io/?EIO=4&transport=polling&t=PfJJkNZ&sid=EmdOMgFCP39oASc6AAAA HTTP/1.1" 200 -
+2025-11-05 14:47:53,866 - backend.services.face_recognition_service - INFO - Started recognition session bNIgL4-GfznE7KHAAAAB for bus 1
+2025-11-05 14:47:54,110 - backend.services.face_recognition_service - INFO - Initializing face recognition service (first time)...
+2025-11-05 14:47:54,114 - utils.face_recognition_service - INFO - Face recognition database path: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:47:54,114 - utils.face_recognition_service - INFO - Creating face recognition system (singleton, first time only)...
+2025-11-05 14:47:54,117 - advanced_realtime_recognition - INFO - Database initialized with 9 images in C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:47:54,117 - advanced_realtime_recognition - INFO - Initializing face recognition models...
+2025-11-05 14:47:54,118 - advanced_realtime_recognition - INFO - Loading models...
+2025-11-05 14:48:00,265 - advanced_realtime_recognition - INFO - Recognition model 'VGG-Face' loaded
+2025-11-05 14:48:00,280 - advanced_realtime_recognition - INFO - Models validated and ready for real-time recognition
+2025-11-05 14:48:00,281 - advanced_realtime_recognition - INFO - [SUCCESS] Face Recognition System initialized successfully!
+2025-11-05 14:48:00,281 - advanced_realtime_recognition - INFO -    - Database: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:48:00,282 - advanced_realtime_recognition - INFO -    - Model: VGG-Face
+2025-11-05 14:48:00,282 - advanced_realtime_recognition - INFO -    - Detector: opencv
+2025-11-05 14:48:00,283 - advanced_realtime_recognition - INFO - Ready to start camera...
+2025-11-05 14:48:00,283 - utils.face_recognition_service - INFO - Face recognition system initialized successfully (shared instance)
+2025-11-05 14:48:00,284 - backend.services.face_recognition_service - INFO - Face recognition service initialized successfully
+2025-11-05 14:48:00,581 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,584 - advanced_realtime_recognition - INFO - Refreshing database embeddings (this may take a moment)...
+2025-11-05 14:48:00,585 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,585 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,586 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,586 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,587 - advanced_realtime_recognition - INFO - Processing all images in database - please wait...
+2025-11-05 14:48:00,587 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,588 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,589 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,590 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,590 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,590 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,591 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,591 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,592 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,598 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,599 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,599 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,600 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,600 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,601 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,601 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,601 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,602 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,602 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,602 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:48:00,603 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:49:48,966 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:49:48,967 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:49:55,441 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:49:55] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-05 14:49:55,513 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:49:55] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:49:55,817 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:49:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:49:55,823 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:49:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:50:00,075 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "GET /driver/scanning HTTP/1.1" 200 -
+2025-11-05 14:50:00,168 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:50:00,176 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:50:00,179 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "[36mGET /static/js/face_scanning.js HTTP/1.1[0m" 304 -
+2025-11-05 14:50:00,238 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "GET /socket.io/?EIO=4&transport=polling&t=PfJKDxI HTTP/1.1" 200 -
+2025-11-05 14:50:00,257 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "POST /socket.io/?EIO=4&transport=polling&t=PfJKDxr&sid=BOYu3jdv48A8e0iCAAAA HTTP/1.1" 200 -
+2025-11-05 14:50:00,266 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "GET /socket.io/?EIO=4&transport=polling&t=PfJKDxy&sid=BOYu3jdv48A8e0iCAAAA HTTP/1.1" 200 -
+2025-11-05 14:50:00,280 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:00] "GET /socket.io/?EIO=4&transport=polling&t=PfJKDyG&sid=BOYu3jdv48A8e0iCAAAA HTTP/1.1" 200 -
+2025-11-05 14:50:03,355 - backend.services.face_recognition_service - INFO - Started recognition session IPnOXloJ_LmojMi7AAAB for bus 1
+2025-11-05 14:50:03,592 - backend.services.face_recognition_service - INFO - Initializing face recognition service (first time)...
+2025-11-05 14:50:03,596 - utils.face_recognition_service - INFO - Face recognition database path: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:50:03,596 - utils.face_recognition_service - INFO - Creating face recognition system (singleton, first time only)...
+2025-11-05 14:50:03,599 - advanced_realtime_recognition - INFO - Database initialized with 9 images in C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:50:03,599 - advanced_realtime_recognition - INFO - Initializing face recognition models...
+2025-11-05 14:50:03,600 - advanced_realtime_recognition - INFO - Loading models...
+2025-11-05 14:50:06,887 - advanced_realtime_recognition - INFO - Recognition model 'VGG-Face' loaded
+2025-11-05 14:50:06,888 - advanced_realtime_recognition - INFO - Models validated and ready for real-time recognition
+2025-11-05 14:50:06,888 - advanced_realtime_recognition - INFO - [SUCCESS] Face Recognition System initialized successfully!
+2025-11-05 14:50:06,889 - advanced_realtime_recognition - INFO -    - Database: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:50:06,889 - advanced_realtime_recognition - INFO -    - Model: VGG-Face
+2025-11-05 14:50:06,890 - advanced_realtime_recognition - INFO -    - Detector: opencv
+2025-11-05 14:50:06,890 - advanced_realtime_recognition - INFO - Ready to start camera...
+2025-11-05 14:50:06,890 - utils.face_recognition_service - INFO - Face recognition system initialized successfully (shared instance)
+2025-11-05 14:50:06,891 - backend.services.face_recognition_service - INFO - Face recognition service initialized successfully
+2025-11-05 14:50:06,923 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,923 - advanced_realtime_recognition - INFO - Refreshing database embeddings (this may take a moment)...
+2025-11-05 14:50:06,924 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,925 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,925 - advanced_realtime_recognition - INFO - Processing all images in database - please wait...
+2025-11-05 14:50:06,925 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,926 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,927 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,927 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,928 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,929 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,929 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,930 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,930 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,930 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,932 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,933 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:06,935 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:50:09,244 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6305, threshold=0.6800, confidence=55.10%
+2025-11-05 14:50:09,248 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.10%, distance: 0.6305, threshold: 0.6800, time: 1272.6ms)
+2025-11-05 14:50:09,535 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6045, threshold=0.6800, confidence=57.62%
+2025-11-05 14:50:09,817 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5724, threshold=0.6800, confidence=60.98%
+2025-11-05 14:50:17,456 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:50:17] "POST /driver/api/log-recognition HTTP/1.1" 200 -
+2025-11-05 14:50:18,803 - backend.services.face_recognition_service - INFO - Stopped recognition session IPnOXloJ_LmojMi7AAAB
+2025-11-05 14:50:20,779 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6209, threshold=0.6800, confidence=56.00%
+2025-11-05 14:50:20,784 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 56.00%, distance: 0.6209, threshold: 0.6800, time: 13031.0ms)
+2025-11-05 14:50:23,034 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5734, threshold=0.6800, confidence=60.88%
+2025-11-05 14:50:23,044 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 60.88%, distance: 0.5734, threshold: 0.6800, time: 9487.1ms)
+2025-11-05 14:50:23,252 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6191, threshold=0.6800, confidence=56.18%
+2025-11-05 14:50:23,397 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5697, threshold=0.6800, confidence=61.27%
+2025-11-05 14:50:24,247 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6225, threshold=0.6800, confidence=55.85%
+2025-11-05 14:50:24,262 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 55.85%, distance: 0.6225, threshold: 0.6800, time: 9634.9ms)
+2025-11-05 14:50:24,593 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5589, threshold=0.6800, confidence=62.47%
+2025-11-05 14:50:24,601 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 62.47%, distance: 0.5589, threshold: 0.6800, time: 9271.6ms)
+2025-11-05 14:50:25,752 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5654, threshold=0.6800, confidence=61.74%
+2025-11-05 14:50:25,946 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5837, threshold=0.6800, confidence=59.77%
+2025-11-05 14:50:26,507 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5792, threshold=0.6800, confidence=60.25%
+2025-11-05 14:50:27,108 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5769, threshold=0.6800, confidence=60.49%
+2025-11-05 14:50:27,121 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 60.49%, distance: 0.5769, threshold: 0.6800, time: 10647.7ms)
+2025-11-05 14:50:27,268 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5514, threshold=0.6800, confidence=63.31%
+2025-11-05 14:50:27,691 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5914, threshold=0.6800, confidence=58.97%
+2025-11-05 14:50:27,736 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5285, threshold=0.6800, confidence=65.94%
+2025-11-05 14:50:27,816 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6013, threshold=0.6800, confidence=57.94%
+2025-11-05 14:50:27,951 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6313, threshold=0.6800, confidence=55.03%
+2025-11-05 14:50:27,981 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5661, threshold=0.6800, confidence=61.67%
+2025-11-05 14:50:28,092 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5990, threshold=0.6800, confidence=58.18%
+2025-11-05 14:50:28,181 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6417, threshold=0.6800, confidence=54.07%
+2025-11-05 14:53:20,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.196.30.28:5000
+2025-11-05 14:53:20,776 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-05 14:53:22,341 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:22] "GET /socket.io/?EIO=4&transport=polling&t=PfJK_Gp HTTP/1.1" 200 -
+2025-11-05 14:53:22,374 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:22] "POST /socket.io/?EIO=4&transport=polling&t=PfJK_Hj&sid=aIaW7orLAcFPx6fBAAAA HTTP/1.1" 200 -
+2025-11-05 14:53:22,377 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:22] "GET /socket.io/?EIO=4&transport=polling&t=PfJK_Hn&sid=aIaW7orLAcFPx6fBAAAA HTTP/1.1" 200 -
+2025-11-05 14:53:22,400 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:22] "GET /socket.io/?EIO=4&transport=polling&t=PfJK_IN&sid=aIaW7orLAcFPx6fBAAAA HTTP/1.1" 200 -
+2025-11-05 14:53:38,413 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:38] "[32mGET / HTTP/1.1[0m" 302 -
+2025-11-05 14:53:38,540 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:38] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:53:38,913 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:53:38,915 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:53:45,196 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:45] "GET /socket.io/?EIO=4&transport=websocket&sid=aIaW7orLAcFPx6fBAAAA HTTP/1.1" 200 -
+2025-11-05 14:53:49,411 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:49] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-11-05 14:53:49,436 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:49] "GET /auth/login HTTP/1.1" 200 -
+2025-11-05 14:53:49,544 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:53:49,550 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:53:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:54:03,108 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:03] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-11-05 14:54:03,163 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:03] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:54:03,273 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:54:03,275 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:54:05,411 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "GET /driver/scanning HTTP/1.1" 200 -
+2025-11-05 14:54:05,520 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:54:05,525 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "[36mGET /static/js/face_scanning.js HTTP/1.1[0m" 304 -
+2025-11-05 14:54:05,529 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:54:05,581 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "GET /socket.io/?EIO=4&transport=polling&t=PfJL9qy HTTP/1.1" 200 -
+2025-11-05 14:54:05,600 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "POST /socket.io/?EIO=4&transport=polling&t=PfJL9rM&sid=jQQ_4jqXHw_UIc5-AAAC HTTP/1.1" 200 -
+2025-11-05 14:54:05,607 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:05] "GET /socket.io/?EIO=4&transport=polling&t=PfJL9rO&sid=jQQ_4jqXHw_UIc5-AAAC HTTP/1.1" 200 -
+2025-11-05 14:54:09,615 - backend.services.face_recognition_service - INFO - Started recognition session DhXV8oQ6G9MuIDRvAAAD for bus 1
+2025-11-05 14:54:09,894 - backend.services.face_recognition_service - INFO - Initializing face recognition service (first time)...
+2025-11-05 14:54:09,897 - utils.face_recognition_service - INFO - Face recognition database path: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:54:09,898 - utils.face_recognition_service - INFO - Creating face recognition system (singleton, first time only)...
+2025-11-05 14:54:09,901 - advanced_realtime_recognition - INFO - Database initialized with 9 images in C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:54:09,901 - advanced_realtime_recognition - INFO - Initializing face recognition models...
+2025-11-05 14:54:09,901 - advanced_realtime_recognition - INFO - Loading models...
+2025-11-05 14:54:20,141 - advanced_realtime_recognition - INFO - Recognition model 'VGG-Face' loaded
+2025-11-05 14:54:20,158 - advanced_realtime_recognition - INFO - Models validated and ready for real-time recognition
+2025-11-05 14:54:20,159 - advanced_realtime_recognition - INFO - [SUCCESS] Face Recognition System initialized successfully!
+2025-11-05 14:54:20,159 - advanced_realtime_recognition - INFO -    - Database: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database
+2025-11-05 14:54:20,160 - advanced_realtime_recognition - INFO -    - Model: VGG-Face
+2025-11-05 14:54:20,160 - advanced_realtime_recognition - INFO -    - Detector: opencv
+2025-11-05 14:54:20,161 - advanced_realtime_recognition - INFO - Ready to start camera...
+2025-11-05 14:54:20,163 - utils.face_recognition_service - INFO - Face recognition system initialized successfully (shared instance)
+2025-11-05 14:54:20,164 - backend.services.face_recognition_service - INFO - Face recognition service initialized successfully
+2025-11-05 14:54:20,262 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,263 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,264 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,265 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,266 - advanced_realtime_recognition - INFO - Refreshing database embeddings (this may take a moment)...
+2025-11-05 14:54:20,267 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,273 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,275 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,278 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,279 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,279 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,280 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,285 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,285 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,287 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,287 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,289 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,290 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,291 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,292 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,292 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,292 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,293 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,296 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,296 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,296 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,297 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,297 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,297 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,298 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,298 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,298 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,300 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,301 - advanced_realtime_recognition - INFO - Processing all images in database - please wait...
+2025-11-05 14:54:20,301 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,302 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,302 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,303 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,303 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,308 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,310 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,314 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,315 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,315 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,320 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,320 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,322 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:20,323 - advanced_realtime_recognition - INFO - Database embeddings not found - creating them now (this may take a moment)...
+2025-11-05 14:54:26,188 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4984, threshold=0.6800, confidence=69.49%
+2025-11-05 14:54:26,194 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 69.49%, distance: 0.4984, threshold: 0.6800, time: 2887.7ms)
+2025-11-05 14:54:53,676 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:53,733 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:53,739 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:53] "GET /socket.io/?EIO=4&transport=polling&t=PfJLLJf HTTP/1.1" 200 -
+2025-11-05 14:54:53,949 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:54,070 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:54] "POST /socket.io/?EIO=4&transport=polling&t=PfJLLfu&sid=JADv1tkPvOwJ2z1TAAAE HTTP/1.1" 200 -
+2025-11-05 14:54:54,100 - backend.services.face_recognition_service - INFO - Stopped recognition session DhXV8oQ6G9MuIDRvAAAD
+2025-11-05 14:54:54,102 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:54] "GET /socket.io/?EIO=4&transport=polling&t=PfJLLgK&sid=JADv1tkPvOwJ2z1TAAAE HTTP/1.1" 200 -
+2025-11-05 14:54:54,130 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:54:54] "GET /socket.io/?EIO=4&transport=websocket&sid=jQQ_4jqXHw_UIc5-AAAC HTTP/1.1" 200 -
+2025-11-05 14:54:54,180 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:54,351 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:54,563 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:54,818 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:55,061 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:55,443 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:55,522 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:56,119 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:56,170 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:56,209 - backend.services.face_recognition_service - ERROR - Error querying student from database: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:56,604 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:56,805 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:57,103 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:57,257 - backend.app - ERROR - Error loading user 2: QueuePool limit of size 20 overflow 40 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-11-05 14:54:59,924 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5570, threshold=0.6800, confidence=62.68%
+2025-11-05 14:54:59,937 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 62.68%, distance: 0.5570, threshold: 0.6800, time: 39697.9ms)
+2025-11-05 14:55:04,823 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6243, threshold=0.6800, confidence=55.68%
+2025-11-05 14:55:04,842 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 55.68%, distance: 0.6243, threshold: 0.6800, time: 44615.2ms)
+2025-11-05 14:55:06,955 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5563, threshold=0.6800, confidence=62.76%
+2025-11-05 14:55:06,979 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 62.76%, distance: 0.5563, threshold: 0.6800, time: 46734.8ms)
+2025-11-05 14:55:07,237 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6246, threshold=0.6800, confidence=55.65%
+2025-11-05 14:55:08,291 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5873, threshold=0.6800, confidence=59.39%
+2025-11-05 14:55:08,432 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5444, threshold=0.6800, confidence=64.10%
+2025-11-05 14:55:08,519 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4905, threshold=0.6800, confidence=70.43%
+2025-11-05 14:55:11,168 - advanced_realtime_recognition - INFO - [SUCCESS] Database embeddings refreshed successfully!
+2025-11-05 14:55:11,349 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4856, threshold=0.6800, confidence=71.02%
+2025-11-05 14:55:11,374 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 71.02%, distance: 0.4856, threshold: 0.6800, time: 51090.3ms)
+2025-11-05 14:55:11,609 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5616, threshold=0.6800, confidence=62.16%
+2025-11-05 14:55:11,886 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5525, threshold=0.6800, confidence=63.18%
+2025-11-05 14:55:12,033 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5151, threshold=0.6800, confidence=67.50%
+2025-11-05 14:55:12,485 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6237, threshold=0.6800, confidence=55.74%
+2025-11-05 14:55:12,570 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6340, threshold=0.6800, confidence=54.77%
+2025-11-05 14:55:12,717 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6324, threshold=0.6800, confidence=54.92%
+2025-11-05 14:55:13,106 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5507, threshold=0.6800, confidence=63.39%
+2025-11-05 14:55:13,518 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5678, threshold=0.6800, confidence=61.48%
+2025-11-05 14:55:13,523 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 61.48%, distance: 0.5678, threshold: 0.6800, time: 53302.5ms)
+2025-11-05 14:55:14,783 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6334, threshold=0.6800, confidence=54.83%
+2025-11-05 14:55:14,943 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5440, threshold=0.6800, confidence=64.14%
+2025-11-05 14:55:15,096 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4425, threshold=0.6800, confidence=76.18%
+2025-11-05 14:55:15,563 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5034, threshold=0.6800, confidence=68.89%
+2025-11-05 14:55:15,577 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 68.89%, distance: 0.5034, threshold: 0.6800, time: 54985.2ms)
+2025-11-05 14:55:16,016 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6355, threshold=0.6800, confidence=54.64%
+2025-11-05 14:55:16,205 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5332, threshold=0.6800, confidence=65.39%
+2025-11-05 14:55:16,448 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5744, threshold=0.6800, confidence=60.77%
+2025-11-05 14:55:16,539 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5559, threshold=0.6800, confidence=62.80%
+2025-11-05 14:55:16,986 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.6263, threshold=0.6800, confidence=55.49%
+2025-11-05 14:55:17,595 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Manoj\photo1.jpg - distance=0.6505, threshold=0.6800, confidence=53.29%
+2025-11-05 14:55:17,604 - advanced_realtime_recognition - INFO - Recognized: Manoj (confidence: 53.29%, distance: 0.6505, threshold: 0.6800, time: 57384.7ms)
+2025-11-05 14:55:17,827 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5770, threshold=0.6800, confidence=60.48%
+2025-11-05 14:55:17,831 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 60.48%, distance: 0.5770, threshold: 0.6800, time: 57619.0ms)
+2025-11-05 14:55:17,965 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5733, threshold=0.6800, confidence=60.88%
+2025-11-05 14:55:18,035 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5212, threshold=0.6800, confidence=66.78%
+2025-11-05 14:55:18,216 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5049, threshold=0.6800, confidence=68.71%
+2025-11-05 14:55:18,273 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5454, threshold=0.6800, confidence=63.99%
+2025-11-05 14:55:18,415 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5695, threshold=0.6800, confidence=61.30%
+2025-11-05 14:55:18,561 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5038, threshold=0.6800, confidence=68.84%
+2025-11-05 14:55:18,908 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5172, threshold=0.6800, confidence=67.26%
+2025-11-05 14:55:18,956 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5395, threshold=0.6800, confidence=64.66%
+2025-11-05 14:55:19,048 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5128, threshold=0.6800, confidence=67.78%
+2025-11-05 14:55:19,090 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5979, threshold=0.6800, confidence=58.29%
+2025-11-05 14:55:19,139 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5912, threshold=0.6800, confidence=58.98%
+2025-11-05 14:55:19,198 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5727, threshold=0.6800, confidence=60.95%
+2025-11-05 14:55:19,335 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5963, threshold=0.6800, confidence=58.45%
+2025-11-05 14:55:48,836 - backend.services.face_recognition_service - INFO - Started recognition session Gmm40BCOSqTZWiB0AAAF for bus 1
+2025-11-05 14:55:50,220 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5510, threshold=0.6800, confidence=63.35%
+2025-11-05 14:55:50,225 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 63.35%, distance: 0.5510, threshold: 0.6800, time: 1147.8ms)
+2025-11-05 14:55:50,973 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5603, threshold=0.6800, confidence=62.31%
+2025-11-05 14:55:51,449 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5613, threshold=0.6800, confidence=62.20%
+2025-11-05 14:55:51,541 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5516, threshold=0.6800, confidence=63.29%
+2025-11-05 14:55:51,730 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5267, threshold=0.6800, confidence=66.14%
+2025-11-05 14:55:51,762 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5622, threshold=0.6800, confidence=62.10%
+2025-11-05 14:55:53,935 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4999, threshold=0.6800, confidence=69.30%
+2025-11-05 14:55:53,937 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 69.30%, distance: 0.4999, threshold: 0.6800, time: 631.1ms)
+2025-11-05 14:55:54,449 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4993, threshold=0.6800, confidence=69.38%
+2025-11-05 14:55:54,562 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4924, threshold=0.6800, confidence=70.20%
+2025-11-05 14:55:57,666 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4926, threshold=0.6800, confidence=70.18%
+2025-11-05 14:55:57,675 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 70.18%, distance: 0.4926, threshold: 0.6800, time: 855.5ms)
+2025-11-05 14:55:58,171 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.4955, threshold=0.6800, confidence=69.83%
+2025-11-05 14:55:58,464 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5125, threshold=0.6800, confidence=67.81%
+2025-11-05 14:55:58,526 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5190, threshold=0.6800, confidence=67.04%
+2025-11-05 14:55:59,609 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:55:59] "POST /driver/api/log-recognition HTTP/1.1" 200 -
+2025-11-05 14:56:01,081 - backend.services.face_recognition_service - INFO - Stopped recognition session Gmm40BCOSqTZWiB0AAAF
+2025-11-05 14:56:01,226 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5307, threshold=0.6800, confidence=65.68%
+2025-11-05 14:56:01,228 - advanced_realtime_recognition - INFO - Recognized: Navin (confidence: 65.68%, distance: 0.5307, threshold: 0.6800, time: 738.2ms)
+2025-11-05 14:56:01,715 - advanced_realtime_recognition - INFO - Match found: C:\Users\91821\OneDrive\my_projects\face_recog_projects\Bus management system\face_recognition_package\database\Navin\photo1.jpg - distance=0.5618, threshold=0.6800, confidence=62.14%
+2025-11-05 14:56:04,448 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:04] "GET /socket.io/?EIO=4&transport=websocket&sid=JADv1tkPvOwJ2z1TAAAE HTTP/1.1" 200 -
+2025-11-05 14:56:04,661 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:04] "GET /driver/dashboard HTTP/1.1" 200 -
+2025-11-05 14:56:04,885 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:56:04,886 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:56:22,435 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:22] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-11-05 14:56:22,460 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:22] "GET /auth/login HTTP/1.1" 200 -
+2025-11-05 14:56:22,567 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:56:22,568 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-11-05 14:56:35,940 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:35] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-11-05 14:56:36,107 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:36] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-11-05 14:56:36,222 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-11-05 14:56:36,226 - werkzeug - INFO - 127.0.0.1 - - [05/Nov/2025 14:56:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

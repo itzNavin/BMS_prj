@@ -36,6 +36,17 @@
     </div>
 </div>
 
+{% if stats.today_total > 0 %}
+<div class="card">
+    <div class="card-body">
+        <form method="POST" action="{{ url_for('driver.clear_entries') }}" style="display: inline;" 
+              onsubmit="return confirm('Are you sure you want to clear all today\'s entries? This action cannot be undone.');">
+            <button type="submit" class="btn btn-secondary">Clear Today's Entries</button>
+        </form>
+    </div>
+</div>
+{% endif %}
+
 <div class="card">
     <div class="card-body">
         <a href="{{ url_for('driver.scanning') }}" class="btn btn-primary btn-block" style="font-size: 1.25rem; padding: 1rem;">

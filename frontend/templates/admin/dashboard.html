@@ -35,6 +35,7 @@
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="{{ url_for('admin.add_student') }}" class="btn btn-primary">Add Student</a>
             <a href="{{ url_for('admin.add_bus') }}" class="btn btn-primary">Add Bus</a>
+            <a href="{{ url_for('admin.add_driver') }}" class="btn btn-primary">Add Driver</a>
             <a href="{{ url_for('admin.students') }}" class="btn btn-secondary">Manage Students</a>
             <a href="{{ url_for('admin.buses') }}" class="btn btn-secondary">Manage Buses</a>
             <a href="{{ url_for('admin.logs') }}" class="btn btn-secondary">View Logs</a>
@@ -45,8 +46,12 @@
 
 {% if recent_logs %}
 <div class="card">
-    <div class="card-header">
+    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
         <h3>Recent Authentication Logs</h3>
+        <form method="POST" action="{{ url_for('admin.clear_logs') }}" style="display: inline;" 
+              onsubmit="return confirm('Are you sure you want to clear all authentication logs? This action cannot be undone.');">
+            <button type="submit" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Clear Logs</button>
+        </form>
     </div>
     <div class="table-container">
         <table>

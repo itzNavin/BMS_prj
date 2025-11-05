@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Add Driver - Bus Management System{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1>Add New Driver</h1>
+    <a href="{{ url_for('admin.users') }}" class="btn btn-secondary">Back to Users</a>
+</div>
+
+<div class="card">
+    <form method="POST" class="auth-form">
+        <div class="form-group">
+            <label for="username">Username *</label>
+            <input type="text" id="username" name="username" class="form-control" required 
+                   placeholder="Enter username">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" class="form-control" required 
+                   placeholder="Enter password" minlength="6">
+            <small style="color: var(--text-muted);">Minimum 6 characters</small>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Add Driver</button>
+            <a href="{{ url_for('admin.users') }}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+

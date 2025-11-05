@@ -93,3 +93,24 @@ def log_recognition():
             'message': str(e)
         }), 500
 
+
+@bp.route('/entries/clear', methods=['POST'])
+@login_required
+def clear_entries():
+    """Clear today's authentication entries for this driver"""
+    try:
+        from datetime import datetime
+        today_start = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+        
+        deleted_count = AuthenticationLog.query.filter(
+            AuthenticationLog.driver_id == current_user.id,
+            AuthenticationLog.timestamp >= today_start
+        ).delete()
+        
+        db.session.commit()
+        flash(f'Successfully cleared {deleted_count} entry/entries for today.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Error clearing entries: {str(e)}', 'error')
+    
+    return redirect(url_for('driver.dashboard'))
